@@ -1,0 +1,37 @@
+<!-- 
+Adapted from Antonio Lupetti
+http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PHP Contact Form Style Demo</title>
+
+<link rel="stylesheet" type="text/css" href="c.css">
+</head>
+
+<body>
+
+<div id="stylized" class="myform">
+<h1> Manage APP main content:</h1>
+<form id="mainform" action="mail.php" method="POST">
+    <label>Name
+        <span class="small">Update Title</span>
+    </label>
+	<input type="text" name="title">
+    <label>Main Content
+        <span class="small">Update Content</span>
+    </label>
+	<textarea style="margin-left: 10px" name="content" rows="6" cols="25"></textarea><br />
+
+    <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+<div class="spacer"></div>
+
+</form>
+
+</div> <!-- end of form class -->
+
+</body>
+</html>

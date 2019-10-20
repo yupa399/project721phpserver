@@ -71,7 +71,7 @@
 	//
 	function queryLatestData($tableName) {
 		$con = connect();
-		$sql = "SELECT * FROM `$tableName` order by ID DESC limit 1";
+		$sql = "SELECT * FROM `$tableName` order by id DESC limit 1";
 		$res = $con->query($sql);
 		$con->close();
 		$rows = array();
